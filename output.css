@@ -50,7 +50,7 @@ body {
   .contentSection p {
     color: #eaeff3; }
     .contentSection p.contentText__bbTitle {
-      padding: 2.5em 0 0;
+      padding: 2.5em 0 0.5em;
       font-size: 1.6em; }
     .contentSection p:not(.contentText__bbTitle) {
       font-size: 1.2em; }
