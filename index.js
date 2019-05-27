@@ -1,8 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
-  document.querySelector('.contact__emailLink').onmouseover = function() {
-    this.classList.add('text--highlight')
-  }
-  document.querySelector('.contact__emailLink').onmouseout = function() {
-    this.classList.remove('text--highlight')
-  }
+/* document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('a.highlightOnHover').forEach(
+    function(element) {
+      element.onmouseover = function() {
+        this.classList.add('text--highlight')
+      }
+    }
+  )
+  document.querySelectorAll('a.highlightOnHover').forEach(
+    function(element) {
+      element.onmouseout = function() {
+        this.classList.remove('text--highlight')
+      }
+    }
+  )
 })
+ */

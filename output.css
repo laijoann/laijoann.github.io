@@ -17,6 +17,14 @@ body {
     font-family: "Rubik", sans-serif;
     font-weight: 300;
     margin: 0; }
+  body a {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    text-decoration: none;
+    color: #c79d8b; }
+    body a:hover {
+      color: #b68069; }
 
 .hero {
   background-color: #6a595d;
@@ -67,37 +75,6 @@ body {
 .contentSection--currently .contentText__bbTitle:first-of-type {
   padding-top: 1em; }
 
-.contentSection--contact {
-  padding-bottom: 3em; }
-  .contentSection--contact .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    @media (max-width: 600px) {
-      .contentSection--contact .wrapper {
-        flex-direction: column; } }
-  .contentSection--contact .contact__platformIconWrapper {
-    display: flex; }
-    @media (max-width: 600px) {
-      .contentSection--contact .contact__platformIconWrapper {
-        padding-bottom: 1em; } }
-  .contentSection--contact .contact__link {
-    display: flex;
-    margin-right: 1em; }
-    @media (max-width: 600px) {
-      .contentSection--contact .contact__link:last-of-type {
-        margin-right: 0; } }
-  .contentSection--contact .contact__platformIcon {
-    height: 30px; }
-  @media (max-width: 600px) {
-    .contentSection--contact p {
-      text-align: center; } }
-  .contentSection--contact a {
-    text-decoration: none;
-    color: #e0c9bf;
-    transition: 200ms ease-in-out;
-    text-transform: uppercase; }
-
 .text--highlight {
   position: relative;
   z-index: 2;
@@ -107,7 +84,9 @@ body {
     position: absolute;
     background-color: #ffd433;
     z-index: -1;
-    transform: rotate(-1deg); }
+    transform: rotate(-1deg);
+    transform-origin: left;
+    animation: highlight 300ms ease-in-out forwards; }
   .text--highlight:before {
     top: 0;
     bottom: 60%;
@@ -118,5 +97,11 @@ body {
     bottom: 0;
     left: -4px;
     right: 0; }
+
+@keyframes highlight {
+  0% {
+    transform: skew(-6deg) scaleX(0); }
+  100% {
+    transform: skew(-6deg) scaleX(1); } }
 
 /*# sourceMappingURL=output.css.map */
