@@ -20,7 +20,7 @@ body
   h1, h2, h3, h4
     font-family: 'Playfair Display', serif
     margin: 0
-  p
+  p, sub
     font-family: 'Rubik', sans-serif
     font-weight: 300
     margin: 0
@@ -35,7 +35,6 @@ body
 
 .hero
   background-color: $coffee-brown
-  background-image: url('assets/hero.png')
   background-repeat: no-repeat
   background-size: cover
   background-position: center
@@ -45,6 +44,8 @@ body
   justify-content: center
   color: white
   text-align: center
+  &--main
+    background-image: url('assets/hero.png')
   h1
     font-size: 8em
     margin: 0
@@ -81,6 +82,13 @@ body
     padding-right: 1.5em
   .contentText__bbTitle:first-of-type
     padding-top: 1em
+
+.contentSection--deets
+  @media (min-width: 600px)
+    .currently__contentTitle
+      flex: 1
+    .currently__contentText
+      max-width: 60%
 
 .text--highlight
   position: relative

@@ -16,7 +16,7 @@ body h1, body h2, body h3, body h4 {
   font-family: "Playfair Display", serif;
   margin: 0;
 }
-body p {
+body p, body sub {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   margin: 0;
@@ -34,7 +34,6 @@ body a:hover {
 
 .hero {
   background-color: #6a595d;
-  background-image: url("assets/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -44,6 +43,9 @@ body a:hover {
   justify-content: center;
   color: white;
   text-align: center;
+}
+.hero--main {
+  background-image: url("assets/hero.png");
 }
 .hero h1 {
   font-size: 8em;
@@ -93,6 +95,15 @@ body a:hover {
 }
 .contentSection--currently .contentText__bbTitle:first-of-type {
   padding-top: 1em;
+}
+
+@media (min-width: 600px) {
+  .contentSection--deets .currently__contentTitle {
+    flex: 1;
+  }
+  .contentSection--deets .currently__contentText {
+    max-width: 60%;
+  }
 }
 
 .text--highlight {
