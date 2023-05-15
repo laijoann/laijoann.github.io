@@ -1,0 +1,25 @@
+{
+  "name": "laijoann.github.io",
+  "version": "0.0.2",
+  "description": "joannlai.com",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch": "sass --watch index.sass output.css",
+    "browser-sync": "browser-sync start --server --files \"*.html, *.css, *.js\"",
+    "dev": "npm run sass-watch & npm run browser-sync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laijoann/laijoann.github.io.git"
+  },
+  "author": "Joann Lai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laijoann/laijoann.github.io/issues"
+  },
+  "homepage": "https://github.com/laijoann/laijoann.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "sass": "^1.62.1"
+  }
+}
